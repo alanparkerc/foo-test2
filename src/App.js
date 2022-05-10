@@ -19,7 +19,8 @@ function App() {
       var mainContainer = document.getElementById("myData");
       for (var i = 0; i < data.length; i++) {
         var div = document.createElement("div");
-        div.innerHTML = 'TITLE: ' + data[i].title + 'URL' + data[i].url;
+        div.innerHTML = 'TITLE: ' + data[i].title;
+        div.innerHTML = 'URL' + data[i].url;
         mainContainer.appendChild(div);
       }
     }
